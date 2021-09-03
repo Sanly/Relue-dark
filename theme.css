@@ -159,12 +159,12 @@
   font-size: 100%;
   padding: 0px 1px;
   margin: 0px 1px;
-  color: #f58484 !important;
-  background-color: #9e757579;
-  border-bottom: 1px dashed #f58484;
+  color: #cf5659 !important;
+  background-color: #cf565950;
+  border-bottom: 1px dashed #cf5659;
 }
 .protyle-wysiwyg [data-node-id] span[data-type='block-ref']:hover {
-  background-color: #9e7575a2;
+  background-color: #cf56596e;
 }
 
 /* 超链接 */
@@ -207,11 +207,11 @@
 /* 页签 */
 .layout-tab-bar .item--focus {
   box-shadow: 0px 0px 0px 1.5px #cf5659 inset;
-  background-color: #cc707021 !important;
+  background-color: #cf565950 !important;
 }
 .layout-tab-bar .item:hover {
   box-shadow: 0px 0px 0px 1.5px #5695cf inset;
-  background-color: #5695cf21 !important;
+  background-color: #5695cf50 !important;
 }
 .layout-tab-bar .item--unupdate {
   font-style: normal;
@@ -226,23 +226,23 @@
 /* 引用块 */
 .layout-tab-container .counter,
 .layout-tab-container .protyle-attr--refcount {
-  border-radius: 50%;
+  border-radius: 8px;
 }
 .protyle-content .counter,
 .protyle-content .protyle-attr--refcount {
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: #cf5659;
   color: #ffffff !important;
 }
 .backlinkList .counter,
 .backlinkList .protyle-attr--refcount {
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: #cf5659;
   color: #ffffff !important;
 }
 .backlinkMList .counter,
 .backlinkMList .protyle-attr--refcount {
-  border-radius: 50%;
+  border-radius: 8px;
   background-color: #cf5659;
   color: #ffffff !important;
 }
@@ -253,14 +253,21 @@
   color: #cf5659;
 }
 
-/* 有序列表 */
+/* 列表 */
 .protyle-wysiwyg [data-node-id].li > .protyle-action--order:after {
   border-radius: 50%;
 }
 .protyle-wysiwyg [data-node-id].li > .protyle-action:after {
-  height: 18px;
-  width: 18px;
-  margin: -9px 0 0 -9px;
+  height: 22px;
+  width: 22px;
+  margin: -11px 0 0 -11px;
+}
+.protyle-wysiwyg [data-node-id].li[fold='1'] > .protyle-action::after {
+  background-color: #cf565950;
+}
+.protyle-wysiwyg [data-node-id].li > .protyle-action:hover::after {
+  opacity: 1;
+  background-color: #cf56596e !important;
 }
 
 /* 任务列表 */
