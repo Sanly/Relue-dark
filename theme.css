@@ -51,13 +51,13 @@
 
   /* 卡片背景 */
   --b3-card-error-color: rgb(250, 179, 174);
-  --b3-card-error-background: rgb(24, 6, 5);
+  --b3-card-error-background: #280a08;
   --b3-card-warning-color: rgb(255, 213, 153);
-  --b3-card-warning-background: rgb(25, 15, 0);
+  --b3-card-warning-background: #2d1b00;
   --b3-card-info-color: rgb(166, 213, 250);
-  --b3-card-info-background: rgb(3, 14, 24);
+  --b3-card-info-background: #051829;
   --b3-card-success-color: rgb(183, 223, 185);
-  --b3-card-success-background: rgb(7, 17, 7);
+  --b3-card-success-background: #0d1f0d;
 
   /* 自定义文字 */
   --b3-font-color1: var(--b3-card-error-color);
@@ -143,6 +143,29 @@
   --b3-protyle-inline-mark-color: #e8eaed;
   --b3-protyle-inline-tag-color: #9aa0a6;
   --b3-protyle-inline-blockref-color: #9876aa;
+
+  /* PDF */
+  --b3-pdf-sidebar-width: 200px;
+  --b3-pdf-offset: 0;
+  --b3-pdf-background1: var(--b3-theme-error);
+  --b3-pdf-background2: #f5822e;
+  --b3-pdf-background3: var(--b3-theme-secondary);
+  --b3-pdf-background4: #65b84d;
+  --b3-pdf-background5: #f5539e;
+  --b3-pdf-background6: var(--b3-theme-primary);
+  --b3-pdf-background7: #944194;
+}
+
+/* PDF */
+.pdfViewer .page canvas,
+.thumbnailImage {
+  filter: grayscale(0%) invert(100%) contrast(100%) brightness(100%)
+    hue-rotate(180deg);
+}
+
+.textLayer,
+.pdf__resize {
+  mix-blend-mode: exclusion;
 }
 
 /* 引述 */
@@ -182,10 +205,10 @@
 
 /*滚动条*/
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 /* 标签 */
